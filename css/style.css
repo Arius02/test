@@ -1,0 +1,215 @@
+[data-theme='dark'] {
+    --primeColor: #009AD8;
+    --secColor: #001D6E;
+    --mainTransition: all .3s;
+    --darkPrimeColor: #1E202B;
+    --bgColor: #1E202B; 
+    --link: white;
+    --inputPh: #1E202B;
+    --inputBg:var(--bgColor);
+    --inputColor: white;
+    --date-mt: rgba(0, 0, 0, 0.1);
+    --tm: rgba(0, 0, 0, 0.2);
+    --date :#2D303D ;
+    --t: #2D303D;
+    --cardBg : #323544;
+    --cardBgT : #323544;
+    --p: white;
+    --status: var(--primeColor);
+    --icon: gray;
+    --foot: #262936;
+    --footInp: var(--darkPrimeColor);
+    --border: unset;
+    --aColor: var(--primeColor) ;
+    --icoHover: var(--darkPrimeColor);
+    --card: black;
+    --card-head: white;}
+[data-theme='light'] {
+  --primeColor: #06283D;
+  --secColor: #001D6E;
+  --mainTransition: all .3s;
+  /* --darkPrimeColor: #1E202B;
+  --darkSecColor: #009AD8; */
+  --bgColor : white ;
+  --link : #06283d8e ;
+  --inputPh: white !important;
+  --inputBg: white;
+  --inputColor: #06283D;
+  --date-mt:#3f9ad7;
+  --tm: rgb(217, 240, 248);
+  --date: #47B5FF;
+  --t: #3587be ;
+  --cardBg: #DFF6FF;
+  --cardBgT: rgb(203, 228, 237);
+  --p: #06283D;
+  --status: #001D6E;
+  --icon: var(--primeColor);
+  --foot: #47B5FF;
+  --footInp: #47b5ff67;
+  --border: white solid  2px;
+  --icoHover: #47B5FF;
+  --card: white;
+  --card-head: var(--darkPrimeColor);
+}
+body {
+  background-color : var(--bgColor) ;
+}
+p {
+  color: var(--p);
+}
+i {
+  color: var(--icon);
+}
+.navbar-brand img {
+  width: 100px;
+}
+.navbar-nav .main-nav{
+  color: var(--link);
+  border: 2px solid transparent ;
+  transition: var(--mainTransition);
+  -webkit-transition: var(--mainTransition);
+  -moz-transition: var(--mainTransition);
+  -ms-transition: var(--mainTransition);
+  -o-transition: var(--mainTransition);
+}
+.navbar-nav .main-nav.active,
+.nav-item:hover .main-nav{
+  color: var(--primeColor);
+  border: 2px solid var(--primeColor) ;
+}
+.form-control:focus{
+  box-shadow: unset;
+  background-color: var(--inputBg);
+  color: var(--inputColor);
+}
+.search input{
+  background-color: var(--inputBg);
+}
+#search,
+#send {
+  background-color: var(--primeColor) ;
+  color: white;
+}
+.weather-card {
+  background-color: var(--cardBg);
+}
+.date{
+  background-color: var(--date);
+}
+.temp {
+  font-size: 70px ;
+}
+.status {
+  color: var(--status);
+}
+.weather-t-card {
+  background-color: var(--cardBgT);
+}
+.date-t {
+  background-color: var(--t);
+}
+.weather-tm-card {
+  background-color: var(--tm);
+}
+.date-tm {
+  background-color: var(--date-mt);
+}
+
+.foot{
+  background-color: var(--foot) ;
+}
+.foot input {
+  background-color: var(--footInp) !important;
+  border: var(--border);
+}
+.foot input::placeholder {
+  color: var(--inputColor);
+}
+.foot input:focus{
+  border: var(--border);
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  background-color: #06283d62;
+  color: var(--primeColor);
+  transition: var(--mainTransition);
+  -webkit-transition: var(--mainTransition);
+  -moz-transition: var(--mainTransition);
+  -ms-transition: var(--mainTransition);
+  -o-transition: var(--mainTransition);
+}
+.icon a {
+  color: var(--aColor) !important ;
+}
+.icon:hover {
+  background-color: var(--primeColor);
+}
+.icon:hover i{
+    color: var(--icoHover);
+} 
+#send:hover{
+  border-color: transparent;
+}
+.form-check-input{
+  width: 50px !important;
+  height: 20px;
+  border: 1px solid var(--primeColor);
+}
+.form-check-input:focus{
+  box-shadow: unset;
+}
+.form-check-input:checked{
+  background-color: var(--primeColor);
+  border: unset;
+}
+.slide-item {
+  width: 100%;
+  height: 500px;
+}
+.content {
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.567);
+}
+.fa-arrow-right {
+  right: 10px; 
+  cursor: pointer;
+  z-index: 99;
+}
+.fa-arrow-left {
+  left: 10px; 
+  cursor: pointer;
+  z-index: 99;
+}
+.card{
+  height: 450px !important;
+  background-color: var(--card);
+  overflow: hidden;
+}
+.card h5 {
+  color: var(--card-head);
+}
+
+.btn-1 {
+  background-color: var(--primeColor);
+  color: white;
+  bottom: 30px;
+}
+.btn-1:hover{
+  background-color: var(--primeColor);
+  opacity: .9;
+  color: white;
+}
+.shade {
+  background-color: var(--card);
+  box-shadow: 0 10px 100px rgba(0, 0, 0, 0.206);
+  width: 100%;
+  height: 100px ;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+h1 {
+  color: var(--primeColor);
+}

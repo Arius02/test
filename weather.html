@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head id="head">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tell Me</title>
+  <link rel="stylesheet" href="css/all.min.css">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" class="mode" href="css/style.css">
+</head>
+<body >
+    <header>
+      <nav class="navbar navbar-expand-lg ">
+        <div class="container-fluid px-5 py-3">
+          <a class="navbar-brand" href="#">
+            <img src="img/logo-no-background.png"alt="">
+          </a>
+            <div class="form-check form-switch ">
+              <input class="form-check-input ms-3 " type="checkbox" role="switch" id="darkMode">
+            </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse " id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0 fs-6 fw-semibold w-50 d-flex justify-content-around">
+              <li class="nav-item ">
+                <a class="nav-link main-nav rounded-pill py-1 px-3" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link main-nav active rounded-pill py-1 px-3" href="/weather.html">Weather</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link main-nav  rounded-pill py-1 px-3" href="/news.html">News</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link main-nav rounded-pill py-1 px-3" href="#">Sports</a>
+              </li>
+              <li class="nav-item ">
+                <a class="nav-link main-nav rounded-pill py-1 px-3" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+  <section class="py-5">
+    <div class="container">
+      <div class="search mt-5">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control border-0" id="searchPlace" placeholder="Find Your Location..." aria-label="Recipient's username" aria-describedby="button-addon2">
+          <button class="btn rounded-pill ms-3 px-3" type="button" id="search">Search</button>
+        </div>
+      </div>
+      <div class="row data g-0 mt-5" id="data">
+        
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer class="foot">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-8">
+          <div>
+              <div class="input-group mb-3">
+                <input type="text" class="form-control rounded-pill" placeholder="Enter Your email to subscribe..." aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn rounded-pill ms-2 px-3" type="button" id="send">Search</button>
+              </div>
+              <p class="text-white"> &copy; 2022 Tell Me. Designed by Themezy. All rights reserved</p>
+          </div>
+        </div>
+        <div class="col-lg-4">
+          <div class="d-flex justify-content-around px-5">
+            <div class="icon rounded-circle  d-flex justify-content-center align-items-center">
+              <a href="">
+                              <i class="fa-brands fa-facebook-f"></i>
+
+              </a>
+            </div>
+            <div class="icon rounded-circle  d-flex justify-content-center align-items-center">
+              <a href="">
+                              <i class="fa-brands fa-twitter"></i>
+              </a>
+            </div>
+            <div class="icon rounded-circle  d-flex justify-content-center align-items-center">
+              <a href="">
+                              <i class="fa-brands fa-linkedin-in"></i>
+              </a>
+            </div>
+            <div class="icon rounded-circle  d-flex justify-content-center align-items-center">
+              <a href=""> 
+                    <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
